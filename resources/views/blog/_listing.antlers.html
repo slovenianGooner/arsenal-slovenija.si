@@ -1,0 +1,72 @@
+<div class="relative bg-white pt-8 pb-8 px-4 sm:px-6 lg:px-8">
+    <div class="relative max-w-screen-lg mx-auto">
+        <div class="max-w-screen-lg mx-auto lg:max-w-none">
+            {{ collection:blog :paginate="paginate" :limit="limit" as="posts" }}
+
+            {{ if no_results }}
+                <p>Ni novic.</p>
+            {{ /if }}
+
+            <div class="grid gap-5 {{ compact ? '' : 'lg:grid-cols-3' }}">
+                {{ posts }}
+                <div class="flex flex-col border overflow-hidden">
+                    {{ if !compact }}
+                    <a href="{{ url }}" class="flex-shrink-0">
+                        <img class="h-48 w-full object-cover"
+                             src="{{ featured_image }}"
+                             alt="">
+                    </a>
+                    {{ /if }}
+                    <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+                        <div class="flex-1">
+                            <a href="{{ url }}" class="block">
+                                <p class="text-xl font-semibold text-gray-900">{{ title }}</p>
+                                <p class="mt-3 text-base text-gray-500">
+                                    {{ content | safe_truncate:200 }}...
+                                </p>
+                            </a>
+                        </div>
+                        <div class="mt-6 flex items-center">
+                            <div>
+                                <div class="flex space-x-1 text-sm text-gray-500">
+                                    <time datetime="{{ date }}" class="capitalize"> {{ date format_localized="%A, %d. %B %Y" }}</time>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{ /posts }}
+            </div>
+
+            <nav class="mt-8 flex items-center justify-between" aria-label="Pagination">
+                {{ paginate }}
+                <div class="hidden sm:block">
+                    <p class="text-sm text-gray-700">
+                        Prikazujem stran
+                        <span class="font-medium">{{ current_page }}</span>
+                        od
+                        <span class="font-medium">{{ total_pages }}</span>
+                    </p>
+                </div>
+                <div class="flex-1 flex justify-between sm:justify-end">
+                    <a href="{{ prev_page }}" class="space-x-1.5 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M7 16l-4-4m0 0l4-4m-4 4h18" />
+                        </svg>
+                        <span>Prejšnja stran</span>
+                    </a>
+                    <a href="{{ next_page }}" class="space-x-1.5 ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
+                        <span>Naslednja stran</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
+                </div>
+                {{ /paginate }}
+            </nav>
+
+            {{ /collection:blog }}
+        </div>
+        {{ slot }}
+    </div>
+</div>

@@ -1,0 +1,70 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: home_team
+        field:
+          max_items: 1
+          mode: default
+          create: true
+          taxonomies:
+            - club
+          display: 'Home Team'
+          type: terms
+          icon: taxonomy
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: away_team
+        field:
+          max_items: 1
+          mode: default
+          create: true
+          taxonomies:
+            - club
+          display: 'Away Team'
+          type: terms
+          icon: taxonomy
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: date_of_match
+        field:
+          mode: single
+          time_enabled: true
+          time_seconds_enabled: false
+          full_width: false
+          inline: false
+          columns: 1
+          rows: 1
+          display: 'Date Of Match'
+          type: date
+          icon: date
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: location
+        field:
+          input_type: text
+          antlers: false
+          display: Location
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: stream
+        field:
+          input_type: text
+          antlers: false
+          display: Stream
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false

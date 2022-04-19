@@ -1,0 +1,76 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: ime
+        field:
+          input_type: text
+          antlers: false
+          display: Ime
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: priimek
+        field:
+          input_type: text
+          antlers: false
+          display: Priimek
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: datum_rojstva
+        field:
+          input_type: date
+          antlers: false
+          display: 'Datum rojstva'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          validate:
+            - required
+            - date
+      -
+        handle: naslov_bivanja
+        field:
+          input_type: text
+          antlers: false
+          display: 'Naslov bivanja'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: e-mail
+        field:
+          input_type: email
+          antlers: false
+          display: E-mail
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          validate:
+            - required
+            - email
+      -
+        handle: telefonska_stevilka
+        field:
+          input_type: text
+          antlers: false
+          display: 'Telefonska številka'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false

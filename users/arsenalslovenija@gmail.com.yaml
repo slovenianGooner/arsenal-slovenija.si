@@ -1,0 +1,8 @@
+name: 'Arsenal Slovenija'
+super: true
+id: b5f74434-1d7f-4cd8-8628-94f2954329e0
+password_hash: $2y$10$0Ek7rG1hn2Z9tEy98bVNzOsDWQ0E.2TZaZa8JKld8osLNaSLh6GQy
+preferences:
+  collections:
+    pages:
+      after_save: continue_editing

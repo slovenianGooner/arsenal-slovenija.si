@@ -1,0 +1,94 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: home_team
+        field:
+          max_items: 1
+          mode: default
+          create: true
+          taxonomies:
+            - club
+          display: 'Home Team'
+          type: terms
+          icon: taxonomy
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: home_team_score
+        field:
+          input_type: number
+          antlers: false
+          display: 'Home Team Score'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          validate:
+            - numeric
+      -
+        handle: home_team_scorers
+        field:
+          antlers: false
+          display: 'Home Team Scorers'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: away_team
+        field:
+          max_items: 1
+          mode: default
+          create: true
+          taxonomies:
+            - club
+          display: 'Away Team'
+          type: terms
+          icon: taxonomy
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: away_team_score
+        field:
+          input_type: number
+          antlers: false
+          display: 'Away Team Score'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          validate:
+            - numeric
+      -
+        handle: away_team_scorers
+        field:
+          antlers: false
+          display: 'Away Team Scorers'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: date_of_match
+        field:
+          mode: single
+          time_enabled: true
+          time_seconds_enabled: false
+          full_width: false
+          inline: false
+          columns: 1
+          rows: 1
+          display: 'Date Of Match'
+          type: date
+          icon: date
+          listable: hidden
+          instructions_position: above
+          read_only: false
