@@ -29,7 +29,9 @@
                         <div class="mt-6 flex items-center">
                             <div>
                                 <div class="flex space-x-1 text-sm text-gray-500">
-                                    <time datetime="{{ date }}" class="capitalize"> {{ date format_localized="%A, %d. %B %Y" }}</time>
+                                    <time datetime="{{ date }}" class="capitalize"> {{ date iso_format="dddd, D. MMMM
+                                        YYYY" }}
+                                    </time>
                                 </div>
                             </div>
                         </div>
