@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 // Route::statamic('example', 'example-view', [
 //    'title' => 'Example'
 // ]);
+
+Route::domain("forum.arsenal-slovenija.si")->get("/", function(){
+    return redirect()->to("https://discord.gg/63UQ3Vfx4n");
+});

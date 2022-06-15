@@ -1,7 +1,7 @@
 title: 'Next Match'
 data:
-  home_team: chelsea
+  home_team: 1-fc-nuernberg
   away_team: arsenal
-  date_of_match: '2022-04-20 20:45'
-  location: 'Stamford Bridge'
-  stream: 'Sportklub 1'
+  date_of_match: '2022-07-08 20:00'
+  location: Max-Morlock-Stadion
+  stream: arsenal.com
