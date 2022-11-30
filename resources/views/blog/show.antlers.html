@@ -47,6 +47,13 @@
             </a>
             {{ content }}
         </div>
+        <div class="grid grid-cols-4 gap-4 mt-6">
+            {{ gallery }}
+                <a href='{{ url }}' class="glightbox">
+                    <img src='{{ glide :src="url" width="300" height="300" }}' alt="{{ alt }}">
+                </a>
+            {{ /gallery }}
+        </div>
         <div class="mt-8">
             <a href="/novice"
                class="space-x-1.5 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">

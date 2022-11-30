@@ -69,6 +69,20 @@ sections:
           type: template
           display: Template
           localizable: true
+      -
+        handle: gallery
+        field:
+          mode: list
+          container: assets
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          display: Gallery
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          read_only: false
   sidebar:
     display: Sidebar
     fields:

@@ -1,7 +1,6 @@
 title: 'Next Match'
 data:
-  home_team: 1-fc-nuernberg
-  away_team: arsenal
-  date_of_match: '2022-07-08 20:00'
-  location: Max-Morlock-Stadion
-  stream: arsenal.com
+  home_team: arsenal
+  away_team: bodo-glimt
+  date_of_match: '2022-10-06 21:00'
+  location: 'Emirates Stadium'

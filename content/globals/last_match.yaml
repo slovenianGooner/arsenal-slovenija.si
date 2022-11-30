@@ -1,7 +1,9 @@
 title: 'Last Match'
 data:
   home_team: arsenal
-  home_team_score: 5
-  away_team: everton
+  home_team_score: 3
+  home_team_scorers: 'Partey 20., Jesus 49., Xhaka 67.'
+  away_team: tottenham
   away_team_score: 1
-  date_of_match: '2022-05-22 17:00'
+  away_team_scorers: 'Kane 31./11m'
+  date_of_match: '2022-10-01 13:30'

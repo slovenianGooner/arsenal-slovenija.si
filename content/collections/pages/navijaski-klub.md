@@ -3,7 +3,7 @@ id: 43700a33-9bcc-4176-8d7c-9712de25a297
 blueprint: pages
 title: 'Navijaški klub'
 updated_by: b5f74434-1d7f-4cd8-8628-94f2954329e0
-updated_at: 1654714290
+updated_at: 1664365998
 template: club
 content:
   -
@@ -179,11 +179,11 @@ content:
                   -
                     type: link
                     attrs:
-                      href: 'mailto:info@arsenalfc.si'
-                      rel: noopener
-                      target: _blank
+                      href: 'mailto:arsenalslovenija1886@gmail.com'
+                      rel: null
+                      target: null
                       title: null
-                text: info@arsenalfc.si
+                text: arsenalslovenija1886@gmail.com
           -
             type: heading
             attrs:
@@ -268,14 +268,14 @@ content:
                   -
                     type: link
                     attrs:
-                      href: 'statamic://asset::assets::Pristopna_izjava_2022_2023-1654714281.pdf'
+                      href: 'statamic://asset::assets::Pristopna_izjava_2022_2023-1664365969.pdf'
                       rel: null
                       target: _blank
                       title: null
-                text: 'pristopno izjavo'
+                text: 'pristopno izjavo '
               -
                 type: text
-                text: ' in jo pravilno izpolnjeno in podpisano pošlješ na naslov:'
+                text: 'in jo pravilno izpolnjeno in podpisano pošlješ na naslov:'
           -
             type: paragraph
             content:
@@ -764,14 +764,14 @@ content:
                   -
                     type: link
                     attrs:
-                      href: 'mailto:info@arsenalfc.si'
-                      rel: noopener
-                      target: _blank
+                      href: 'mailto:arsenalslovenija1886@gmail.com'
+                      rel: null
+                      target: null
                       title: null
-                text: info@arsenalfc.si
+                text: arsenalslovenija1886@gmail.com
               -
                 type: text
-                text: "\_v čim krajšem možnem času oziroma v roku 5 dni po tekmi ali vsaj en dan pred naslednjo tekmo."
+                text: ' v čim krajšem možnem času oziroma v roku 5 dni po tekmi ali vsaj en dan pred naslednjo tekmo.'
           -
             type: paragraph
             content:
@@ -961,9 +961,9 @@ content:
                   -
                     type: link
                     attrs:
-                      href: 'mailto:info@arsenalfc.si'
-                      rel: noopener
-                      target: _blank
+                      href: 'mailto:arsenalslovenija1886@gmail.com'
+                      rel: null
+                      target: null
                       title: null
-                text: info@arsenalfc.si
+                text: arsenalslovenija1886@gmail.com
 ---
