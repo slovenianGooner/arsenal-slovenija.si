@@ -3,7 +3,7 @@ id: 43700a33-9bcc-4176-8d7c-9712de25a297
 blueprint: pages
 title: 'Navijaški klub'
 updated_by: b5f74434-1d7f-4cd8-8628-94f2954329e0
-updated_at: 1664365998
+updated_at: 1687357733
 template: club
 content:
   -
@@ -268,7 +268,7 @@ content:
                   -
                     type: link
                     attrs:
-                      href: 'statamic://asset::assets::Pristopna_izjava_2022_2023-1664365969.pdf'
+                      href: 'statamic://asset::assets::Pristopna_izjava_2023_2024.pdf'
                       rel: null
                       target: _blank
                       title: null
@@ -312,7 +312,7 @@ content:
             content:
               -
                 type: text
-                text: 'Članarina za sezono 2022/2023 znaša 20€ za nove člane in tiste, ki v lanski sezoni mogoče niste imeli aktivnega članstva. Člani mlajši od 15 let so opravičeni plačila članarine in poravnajo le enkratni znesek 5€ za stroške izdelave izkaznice.'
+                text: 'Članarina za sezono 2023/2024 znaša 20€ za nove člane in tiste, ki v lanski sezoni mogoče niste imeli aktivnega članstva. Člani mlajši od 15 let so opravičeni plačila članarine in poravnajo le enkratni znesek 5€ za stroške izdelave izkaznice.'
               -
                 type: hard_break
               -
